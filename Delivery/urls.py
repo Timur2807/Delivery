@@ -28,7 +28,7 @@ urlpatterns = [
     path('admin/doc/', include('django.contrib.admindocs.urls')),
     # подключение документации.
     path('admin/', admin.site.urls),
-    path('api/', include('api_app.urls')),
+    path('', include('api_app.urls')),
     # подключение api.
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     # подключение схемы документации.

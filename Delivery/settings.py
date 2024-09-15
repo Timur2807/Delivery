@@ -135,7 +135,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ['rest_framework.permissions.IsAuthenticated'],
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 2,
+    'PAGE_SIZE': 3,
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
 
@@ -147,3 +147,15 @@ SPECTACULAR_SETTINGS = {
     # OTHER SETTINGS
 }
 
+# from django.conf import settings
+# from django.core.exceptions import ImproperlyConfigured
+#
+# DADATA_API_URL = getattr(settings, 'DADATA_API_URL', 'https://dadata.ru/api/v2')
+# DADATA_API_TOKEN = getattr(settings, '7952737a08e8f0b42b3032770a25404320a6f31f', None)
+#
+# if not DADATA_API_TOKEN:
+#     raise ImproperlyConfigured(
+#         """API token are required.
+#                                 Please, check project settings for the DADATA_API_TOKEN.
+#                                 """
+#     )
