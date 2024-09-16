@@ -1,7 +1,7 @@
 """
 В этом модуле лежит set представление.
 """
-
+import logging
 from rest_framework import viewsets, generics
 from orders.models import Orders
 from .serializers import OrdersSerializers
@@ -18,6 +18,8 @@ from django_filters.rest_framework import DjangoFilterBackend
 #     queryset = Orders.objects.all()
 #     serializer_class = OrdersSerializers
 
+log = logging.getLogger(__name__)
+
 class OrderAPIViewSet(viewsets.ModelViewSet):
     """
     Набор представлений для действий над заявками.
@@ -26,6 +28,7 @@ class OrderAPIViewSet(viewsets.ModelViewSet):
     """
     queryset = Orders.objects.all()
     serializer_class = OrdersSerializers
+    log.info('Rendering for orders')
     filter_backends = [
         SearchFilter,
         DjangoFilterBackend,

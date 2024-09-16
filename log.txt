@@ -1,0 +1,12 @@
+2024-09-16 08:45:49,538 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-09-16 08:45:58,605 [WARNING] django.request: Not Found: /
+2024-09-16 08:45:58,606 [WARNING] django.server: "GET / HTTP/1.1" 404 3225
+2024-09-16 08:45:58,804 [WARNING] django.request: Not Found: /favicon.ico
+2024-09-16 08:45:58,805 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 3276
+2024-09-16 08:46:05,358 [INFO] django.server: "GET /api/ HTTP/1.1" 200 5295
+2024-09-16 08:47:15,996 [INFO] django.utils.autoreload: C:\Users\User\Desktop\Delivery_project\Delivery\settings.py changed, reloading.
+2024-09-16 08:47:18,095 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-09-16 08:47:19,154 [INFO] django.server: "GET /api/orders/ HTTP/1.1" 200 17929
+2024-09-16 08:47:19,406 [INFO] django.server: "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+2024-09-16 08:47:46,928 [INFO] django.server: "GET /api/orders/2/ HTTP/1.1" 200 13635
+2024-09-16 08:47:58,928 [INFO] django.server: "GET /api/orders/ HTTP/1.1" 200 17929
