@@ -30,6 +30,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('api_app.urls')),
     # подключение api.
+    path('', include('registration.urls')),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     # подключение схемы документации.
     path('api/swagger/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger'),
